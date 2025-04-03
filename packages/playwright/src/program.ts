@@ -157,7 +157,7 @@ Examples:
   $ npx playwright merge-reports playwright-report`);
 }
 
-async function runTests(args: string[], opts: { [key: string]: any }) {
+export async function runTests(args: string[], opts: { [key: string]: any }) {
   await startProfiling();
   const cliOverrides = overridesFromOptions(opts);
 
